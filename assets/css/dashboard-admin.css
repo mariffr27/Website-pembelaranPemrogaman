@@ -1,0 +1,399 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #444;
+    color: white;
+    width: 250px;
+    min-height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+main {
+    margin-left: 260px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Form Styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Add User Button */
+button.add-user {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button.add-user:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Action Buttons */
+button.change-user, button.delete-user, .edit-video, .delete-video, .edit-course, .delete-course, .edit-video-course, .delete-video-course {
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.change-user {
+    background-color: #ffc107;
+    color: white;
+}
+
+button.change-user:hover {
+    background-color: #e0a800;
+}
+
+button.delete-user {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.delete-user:hover {
+    background-color: #c82333;
+}
+
+.edit-video {
+    background-color: #007BFF;
+    color: white;
+}
+
+.edit-video:hover {
+    background-color: #0056b3;
+}
+
+.delete-video {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-video:hover {
+    background-color: #c82333;
+}
+
+.edit-course {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-course:hover {
+    background-color: #218838;
+}
+
+.delete-course {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-course:hover {
+    background-color: #c82333;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Content Centering */
+#content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    form, table {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    nav {
+        width: 100%;
+        position: static;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+
+/* Edit Course Form Styling */
+#edit-course-form {
+    display: none; /* Hidden by default, will be shown when needed */
+    background-color: #fff;
+    padding: 20px;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px; /* Added margin to prevent overlap with fixed nav */
+}
+
+#edit-course-form h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#edit-course-form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+/* Styling umum untuk tombol */
+button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tombol Delete */
+button.delete-btn {
+    background-color: #e74c3c; /* Merah */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.delete-btn:hover {
+    background-color: #c0392b; /* Merah gelap saat hover */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+button.delete-btn:active {
+    background-color: #a93226; /* Lebih gelap saat diklik */
+    transform: scale(0.95); /* Sedikit mengecil saat diklik */
+}
+
+/* Tombol Edit */
+button.edit-btn {
+    background-color: #3498db; /* Biru */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.edit-btn:hover {
+    background-color: #2980b9; /* Biru gelap saat hover */
+    transform: scale(1.05);
+}
+
+button.edit-btn:active {
+    background-color: #2471a3; /* Lebih gelap saat diklik */
+    transform: scale(0.95);
+}
+
+
+#edit-course-form input,
+#edit-course-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#edit-course-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#edit-course-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#edit-course-form button:hover {
+    background-color: #218838;
+}
+
+#edit-course-form input:focus,
+#edit-course-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#edit-course-form input::placeholder,
+#edit-course-form textarea::placeholder {
+    color: #888;
+}
+
+/* Modal Background */
+#edit-course-form:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#add-course-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#add-course-form h3 {
+    text-align: center;
+    color: #333;
+}
+
+#add-course-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#add-course-form input,
+#add-course-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-course-form button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#add-course-form button:hover {
+    background-color: #2980b9;
+}
+
+#add-course-form button[type="button"] {
+    background-color: #e74c3c;
+}
+
+#add-course-form button[type="button"]:hover {
+    background-color: #c0392b;
+}

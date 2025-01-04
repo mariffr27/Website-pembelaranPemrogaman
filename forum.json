@@ -1,0 +1,29 @@
+[
+    {
+        "id": "diskusi1",
+        "title": "Bagaimana cara memahami JavaScript lebih baik?",
+        "author": "John Doe",
+        "date": "2025-01-02",
+        "comments": 15,
+        "icon": "fas fa-code",
+        "content": "Diskusi tentang tips dan trik memahami JavaScript, mulai dari konsep dasar hingga teknik lanjutan."
+    },
+    {
+        "id": "diskusi2",
+        "title": "Rekomendasi framework CSS terbaik?",
+        "author": "Jane Smith",
+        "date": "2025-01-03",
+        "comments": 10,
+        "icon": "fas fa-paint-brush",
+        "content": "Diskusi mengenai framework CSS seperti Bootstrap, Tailwind, dan Foundation, serta rekomendasi terbaik."
+    },
+    {
+        "id": "diskusi3",
+        "title": "Tantangan belajar bahasa Python",
+        "author": "Michael Lee",
+        "date": "2025-01-04",
+        "comments": 20,
+        "icon": "fas fa-python",
+        "content": "Diskusi mengenai kendala umum dalam mempelajari Python dan cara mengatasinya."
+    }
+]

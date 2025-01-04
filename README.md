@@ -36,6 +36,3 @@ Gantilah `nama-folder-proyek` dengan nama folder tempat Anda menaruh file proyek
 - **`assets/`**: Menyimpan semua file statis yang digunakan di web, seperti gambar, CSS, dan JavaScript.
 - **`certificates/`**: Menyimpan template dan sertifikat yang diterbitkan untuk pengguna.
 - **`index.php`**: Halaman utama yang digunakan untuk mengakses fitur pembelajaran koding.
-
-
-Dengan struktur ini, Anda dapat dengan mudah mengorganisasi dan mengembangkan proyek sesuai dengan kebutuhan.

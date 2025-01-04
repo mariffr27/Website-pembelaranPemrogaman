@@ -28,3 +28,14 @@ Setelah Anda mendownload file proyek, salin atau pindahkan seluruh folder proyek
 ### 4. Akses Web Pembelajaran Koding
 Buka browser Anda dan ketikkan alamat berikut: http://localhost/nama-folder-proyek/
 Gantilah `nama-folder-proyek` dengan nama folder tempat Anda menaruh file proyek di dalam folder `htdocs`. Misalnya, jika folder proyek Anda bernama `web-pembelajaran-koding`, maka URL yang diakses akan menjadi:
+
+## Penjelasan Struktur Folder
+
+- **`root/`**: Menyimpan semua file json dan php pada user login.
+- **`admin/`**: Menyimpan file untuk bagian admin, termasuk halaman admin dan skrip khusus admin.
+- **`assets/`**: Menyimpan semua file statis yang digunakan di web, seperti gambar, CSS, dan JavaScript.
+- **`certificates/`**: Menyimpan template dan sertifikat yang diterbitkan untuk pengguna.
+- **`index.php`**: Halaman utama yang digunakan untuk mengakses fitur pembelajaran koding.
+
+
+Dengan struktur ini, Anda dapat dengan mudah mengorganisasi dan mengembangkan proyek sesuai dengan kebutuhan.

@@ -12,19 +12,19 @@ Fitur utama dari web ini meliputi:
 
 Web Pembelajaran Koding ini cocok untuk siapa saja yang ingin memulai perjalanan mereka dalam dunia pengembangan perangkat lunak atau bagi mereka yang ingin memperdalam keterampilan pemrograman yang sudah ada.
 
-
 ## Cara Instalasi dan Penggunaan
 
-### 1. Download ProyekUnduh file proyek web pembelajaran koding dari repository GitHub atau sumber lainnya.
+### 1. Download Proyek
+Unduh file proyek web pembelajaran koding dari repository GitHub atau sumber lainnya.
 
 ### 2. Pindahkan File ke Folder `htdocs` XAMPP
 Setelah Anda mendownload file proyek, salin atau pindahkan seluruh folder proyek ke direktori `htdocs` pada instalasi XAMPP. Biasanya, direktori `htdocs` terletak di:
 - **Windows**: `C:\xampp\htdocs\`
 - **Mac**: `/Applications/XAMPP/htdocs/`
 
-### 3. Jalankan XAMPP
-- Buka aplikasi XAMPP dan jalankan **Apache** serta **MySQL** jika proyek Anda memerlukan database.
-  
+### 3. Install Dependencies
+Sebelum menjalankan proyek, Anda perlu menginstal beberapa dependencies seperti PHPMailer, FPDF, dan Composer.
+
 ### 4. Akses Web Pembelajaran Koding
 Buka browser Anda dan ketikkan alamat berikut: http://localhost/nama-folder-proyek/
 Gantilah `nama-folder-proyek` dengan nama folder tempat Anda menaruh file proyek di dalam folder `htdocs`. Misalnya, jika folder proyek Anda bernama `web-pembelajaran-koding`, maka URL yang diakses akan menjadi:
